@@ -7,6 +7,7 @@
 
 import SwiftUI
 import AppKit
+import QuartzCore
 
 class AppDelegate: NSObject, NSApplicationDelegate {
     private var sidebarWindow: NSWindow?
@@ -145,12 +146,49 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     private func showPopover() {
-        popoverWindow?.makeKeyAndOrderFront(nil)
-        popoverWindow?.makeKey()
+        guard let popoverWindow = popoverWindow else { return }
+        
+        // Calculate both start and end positions
+        let targetFrame = calculatePopoverFrame()
+        let startFrame = NSRect(
+            x: NSScreen.main?.frame.maxX ?? targetFrame.maxX, // Start off-screen to the right
+            y: targetFrame.origin.y,
+            width: targetFrame.width,
+            height: targetFrame.height
+        )
+        
+        // Set initial position off-screen
+        popoverWindow.setFrame(startFrame, display: false)
+        popoverWindow.makeKeyAndOrderFront(nil)
+        popoverWindow.makeKey()
         NSApp.activate(ignoringOtherApps: true)
+        
+        // Animate to final position
+        NSAnimationContext.runAnimationGroup { context in
+            context.duration = 0.3
+            context.timingFunction = CAMediaTimingFunction(name: .easeOut)
+            popoverWindow.animator().setFrame(targetFrame, display: true)
+        }
     }
     
     private func hidePopover() {
-        popoverWindow?.orderOut(nil)
+        guard let popoverWindow = popoverWindow else { return }
+        
+        let currentFrame = popoverWindow.frame
+        let hideFrame = NSRect(
+            x: NSScreen.main?.frame.maxX ?? (currentFrame.maxX + currentFrame.width), // Move off-screen to the right
+            y: currentFrame.origin.y,
+            width: currentFrame.width,
+            height: currentFrame.height
+        )
+        
+        // Animate to off-screen position, then hide
+        NSAnimationContext.runAnimationGroup({ context in
+            context.duration = 0.25
+            context.timingFunction = CAMediaTimingFunction(name: .easeIn)
+            popoverWindow.animator().setFrame(hideFrame, display: true)
+        }, completionHandler: {
+            popoverWindow.orderOut(nil)
+        })
     }
 }

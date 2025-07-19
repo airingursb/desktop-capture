@@ -8,19 +8,36 @@
 import SwiftUI
 
 struct QuickCaptureView: View {
-    @State private var name: String = "Automatic"
+    @AppStorage("selectedName") private var name: String = "Automatic"
     @State private var content: String = ""
     @State private var url: String = ""
-    @State private var selectedFormat: String = "Markdown"
-    @State private var selectedLocation: String = "TikTok > Inbox"
+    @AppStorage("selectedFormat") private var selectedFormat: String = "Markdown"
+    @AppStorage("selectedLocation") private var selectedLocation: String = "TikTok > Inbox"
+    @AppStorage("selectedCurrency") private var selectedCurrency: String = "USD"
+    @AppStorage("savedTags") private var savedTagsData: Data = Data()
     @State private var tags: [String] = []
     @State private var newTag: String = ""
-    @State private var rating: Int = 0
+    @AppStorage("defaultRating") private var rating: Int = 0
     @State private var isAddingTag = false
     
     let formats = ["Markdown", "Plain Text", "Rich Text", "HTML"]
     let locations = ["TikTok > Inbox", "General > Notes", "Projects > Current"]
+    let currencies = ["USD", "EUR", "GBP", "JPY", "CNY", "SGD", "KRW", "INR"]
     let onClose: () -> Void
+    
+    // Load tags from UserDefaults when view appears
+    private func loadTags() {
+        if let decodedTags = try? JSONDecoder().decode([String].self, from: savedTagsData) {
+            tags = decodedTags
+        }
+    }
+    
+    // Save tags to UserDefaults
+    private func saveTags() {
+        if let encodedTags = try? JSONEncoder().encode(tags) {
+            savedTagsData = encodedTags
+        }
+    }
     
     var body: some View {
         VStack(spacing: 0) {
@@ -238,6 +255,23 @@ struct QuickCaptureView: View {
                     .menuStyle(BorderlessButtonMenuStyle())
                     .frame(maxWidth: 160)
                 }
+                
+                // Currency selection
+                HStack {
+                    Text("Currency")
+                        .foregroundColor(.secondary)
+                    Spacer()
+                    
+                    Menu(selectedCurrency) {
+                        ForEach(currencies, id: \.self) { currency in
+                            Button(currency) {
+                                selectedCurrency = currency
+                            }
+                        }
+                    }
+                    .menuStyle(BorderlessButtonMenuStyle())
+                    .frame(maxWidth: 80)
+                }
                 }
                 .padding(.horizontal, 16)
                 .padding(.vertical, 12)
@@ -260,6 +294,9 @@ struct QuickCaptureView: View {
         .background(Color(NSColor.windowBackgroundColor))
         .clipShape(RoundedRectangle(cornerRadius: 12))
         .shadow(color: .black.opacity(0.3), radius: 10, x: 0, y: 5)
+        .onAppear {
+            loadTags()
+        }
     }
     
     private func addNote() {
@@ -269,13 +306,14 @@ struct QuickCaptureView: View {
         print("URL: \(url)")
         print("Format: \(selectedFormat)")
         print("Location: \(selectedLocation)")
+        print("Currency: \(selectedCurrency)")
         print("Rating: \(rating)")
+        print("Tags: \(tags)")
         
-        // Clear form after adding
+        // Clear form after adding (keep user preferences)
         content = ""
         url = ""
-        name = "Automatic"
-        rating = 0
+        // Keep name, format, location, currency, and rating as they are user preferences
         
         // Close popover after adding
         onClose()
@@ -285,6 +323,7 @@ struct QuickCaptureView: View {
         let trimmedTag = newTag.trimmingCharacters(in: .whitespacesAndNewlines)
         if !trimmedTag.isEmpty && !tags.contains(trimmedTag) {
             tags.append(trimmedTag)
+            saveTags()
         }
         newTag = ""
         isAddingTag = false
@@ -292,6 +331,7 @@ struct QuickCaptureView: View {
     
     private func removeTag(_ tag: String) {
         tags.removeAll { $0 == tag }
+        saveTags()
     }
     
     private func cancelAddTag() {
