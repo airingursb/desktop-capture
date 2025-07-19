@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  ob-desktop-capture
+//  desktop-capture
 //
 //  Created by Airing on 2025/7/19.
 //

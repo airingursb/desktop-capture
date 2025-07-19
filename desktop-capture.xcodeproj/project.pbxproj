@@ -12,37 +12,37 @@
 			containerPortal = 9D474E5A2E2B6F7300891BEF /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9D474E612E2B6F7300891BEF;
-			remoteInfo = "ob-desktop-capture";
+			remoteInfo = "desktop-capture";
 		};
 		9D474E802E2B6F7400891BEF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D474E5A2E2B6F7300891BEF /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9D474E612E2B6F7300891BEF;
-			remoteInfo = "ob-desktop-capture";
+			remoteInfo = "desktop-capture";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9D474E622E2B6F7300891BEF /* ob-desktop-capture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ob-desktop-capture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D474E752E2B6F7300891BEF /* ob-desktop-captureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ob-desktop-captureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D474E7F2E2B6F7400891BEF /* ob-desktop-captureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ob-desktop-captureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D474E622E2B6F7300891BEF /* desktop-capture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desktop-capture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D474E752E2B6F7300891BEF /* desktop-captureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "desktop-captureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D474E7F2E2B6F7400891BEF /* desktop-captureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "desktop-captureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		9D474E642E2B6F7300891BEF /* ob-desktop-capture */ = {
+		9D474E642E2B6F7300891BEF /* desktop-capture */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "ob-desktop-capture";
+			path = "desktop-capture";
 			sourceTree = "<group>";
 		};
-		9D474E782E2B6F7300891BEF /* ob-desktop-captureTests */ = {
+		9D474E782E2B6F7300891BEF /* desktop-captureTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "ob-desktop-captureTests";
+			path = "desktop-captureTests";
 			sourceTree = "<group>";
 		};
-		9D474E822E2B6F7400891BEF /* ob-desktop-captureUITests */ = {
+		9D474E822E2B6F7400891BEF /* desktop-captureUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "ob-desktop-captureUITests";
+			path = "desktop-captureUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +75,9 @@
 		9D474E592E2B6F7300891BEF = {
 			isa = PBXGroup;
 			children = (
-				9D474E642E2B6F7300891BEF /* ob-desktop-capture */,
-				9D474E782E2B6F7300891BEF /* ob-desktop-captureTests */,
-				9D474E822E2B6F7400891BEF /* ob-desktop-captureUITests */,
+				9D474E642E2B6F7300891BEF /* desktop-capture */,
+				9D474E782E2B6F7300891BEF /* desktop-captureTests */,
+				9D474E822E2B6F7400891BEF /* desktop-captureUITests */,
 				9D474E632E2B6F7300891BEF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,9 +85,9 @@
 		9D474E632E2B6F7300891BEF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D474E622E2B6F7300891BEF /* ob-desktop-capture.app */,
-				9D474E752E2B6F7300891BEF /* ob-desktop-captureTests.xctest */,
-				9D474E7F2E2B6F7400891BEF /* ob-desktop-captureUITests.xctest */,
+				9D474E622E2B6F7300891BEF /* desktop-capture.app */,
+				9D474E752E2B6F7300891BEF /* desktop-captureTests.xctest */,
+				9D474E7F2E2B6F7400891BEF /* desktop-captureUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9D474E612E2B6F7300891BEF /* ob-desktop-capture */ = {
+		9D474E612E2B6F7300891BEF /* desktop-capture */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D474E892E2B6F7400891BEF /* Build configuration list for PBXNativeTarget "ob-desktop-capture" */;
+			buildConfigurationList = 9D474E892E2B6F7400891BEF /* Build configuration list for PBXNativeTarget "desktop-capture" */;
 			buildPhases = (
 				9D474E5E2E2B6F7300891BEF /* Sources */,
 				9D474E5F2E2B6F7300891BEF /* Frameworks */,
@@ -108,18 +108,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				9D474E642E2B6F7300891BEF /* ob-desktop-capture */,
+				9D474E642E2B6F7300891BEF /* desktop-capture */,
 			);
-			name = "ob-desktop-capture";
+			name = "desktop-capture";
 			packageProductDependencies = (
 			);
-			productName = "ob-desktop-capture";
-			productReference = 9D474E622E2B6F7300891BEF /* ob-desktop-capture.app */;
+			productName = "desktop-capture";
+			productReference = 9D474E622E2B6F7300891BEF /* desktop-capture.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9D474E742E2B6F7300891BEF /* ob-desktop-captureTests */ = {
+		9D474E742E2B6F7300891BEF /* desktop-captureTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D474E8C2E2B6F7400891BEF /* Build configuration list for PBXNativeTarget "ob-desktop-captureTests" */;
+			buildConfigurationList = 9D474E8C2E2B6F7400891BEF /* Build configuration list for PBXNativeTarget "desktop-captureTests" */;
 			buildPhases = (
 				9D474E712E2B6F7300891BEF /* Sources */,
 				9D474E722E2B6F7300891BEF /* Frameworks */,
@@ -131,18 +131,18 @@
 				9D474E772E2B6F7300891BEF /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				9D474E782E2B6F7300891BEF /* ob-desktop-captureTests */,
+				9D474E782E2B6F7300891BEF /* desktop-captureTests */,
 			);
-			name = "ob-desktop-captureTests";
+			name = "desktop-captureTests";
 			packageProductDependencies = (
 			);
-			productName = "ob-desktop-captureTests";
-			productReference = 9D474E752E2B6F7300891BEF /* ob-desktop-captureTests.xctest */;
+			productName = "desktop-captureTests";
+			productReference = 9D474E752E2B6F7300891BEF /* desktop-captureTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9D474E7E2E2B6F7400891BEF /* ob-desktop-captureUITests */ = {
+		9D474E7E2E2B6F7400891BEF /* desktop-captureUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D474E8F2E2B6F7400891BEF /* Build configuration list for PBXNativeTarget "ob-desktop-captureUITests" */;
+			buildConfigurationList = 9D474E8F2E2B6F7400891BEF /* Build configuration list for PBXNativeTarget "desktop-captureUITests" */;
 			buildPhases = (
 				9D474E7B2E2B6F7400891BEF /* Sources */,
 				9D474E7C2E2B6F7400891BEF /* Frameworks */,
@@ -154,13 +154,13 @@
 				9D474E812E2B6F7400891BEF /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				9D474E822E2B6F7400891BEF /* ob-desktop-captureUITests */,
+				9D474E822E2B6F7400891BEF /* desktop-captureUITests */,
 			);
-			name = "ob-desktop-captureUITests";
+			name = "desktop-captureUITests";
 			packageProductDependencies = (
 			);
-			productName = "ob-desktop-captureUITests";
-			productReference = 9D474E7F2E2B6F7400891BEF /* ob-desktop-captureUITests.xctest */;
+			productName = "desktop-captureUITests";
+			productReference = 9D474E7F2E2B6F7400891BEF /* desktop-captureUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9D474E5D2E2B6F7300891BEF /* Build configuration list for PBXProject "ob-desktop-capture" */;
+			buildConfigurationList = 9D474E5D2E2B6F7300891BEF /* Build configuration list for PBXProject "desktop-capture" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +200,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9D474E612E2B6F7300891BEF /* ob-desktop-capture */,
-				9D474E742E2B6F7300891BEF /* ob-desktop-captureTests */,
-				9D474E7E2E2B6F7400891BEF /* ob-desktop-captureUITests */,
+				9D474E612E2B6F7300891BEF /* desktop-capture */,
+				9D474E742E2B6F7300891BEF /* desktop-captureTests */,
+				9D474E7E2E2B6F7400891BEF /* desktop-captureUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +258,12 @@
 /* Begin PBXTargetDependency section */
 		9D474E772E2B6F7300891BEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9D474E612E2B6F7300891BEF /* ob-desktop-capture */;
+			target = 9D474E612E2B6F7300891BEF /* desktop-capture */;
 			targetProxy = 9D474E762E2B6F7300891BEF /* PBXContainerItemProxy */;
 		};
 		9D474E812E2B6F7400891BEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9D474E612E2B6F7300891BEF /* ob-desktop-capture */;
+			target = 9D474E612E2B6F7300891BEF /* desktop-capture */;
 			targetProxy = 9D474E802E2B6F7400891BEF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -394,7 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "ob-desktop-capture/ob_desktop_capture.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "desktop-capture/ob_desktop_capture.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -408,7 +408,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.ursb.ob-desktop-capture";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.ursb.desktop-capture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -421,7 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "ob-desktop-capture/ob_desktop_capture.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "desktop-capture/ob_desktop_capture.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -435,7 +435,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.ursb.ob-desktop-capture";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.ursb.desktop-capture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -453,11 +453,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.ursb.ob-desktop-captureTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.ursb.desktop-captureTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ob-desktop-capture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ob-desktop-capture";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desktop-capture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/desktop-capture";
 			};
 			name = Debug;
 		};
@@ -471,11 +471,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.ursb.ob-desktop-captureTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.ursb.desktop-captureTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ob-desktop-capture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ob-desktop-capture";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desktop-capture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/desktop-capture";
 			};
 			name = Release;
 		};
@@ -487,11 +487,11 @@
 				DEVELOPMENT_TEAM = CX8NZ6G6FX;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.ursb.ob-desktop-captureUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.ursb.desktop-captureUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "ob-desktop-capture";
+				TEST_TARGET_NAME = "desktop-capture";
 			};
 			name = Debug;
 		};
@@ -503,18 +503,18 @@
 				DEVELOPMENT_TEAM = CX8NZ6G6FX;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.ursb.ob-desktop-captureUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.ursb.desktop-captureUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "ob-desktop-capture";
+				TEST_TARGET_NAME = "desktop-capture";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9D474E5D2E2B6F7300891BEF /* Build configuration list for PBXProject "ob-desktop-capture" */ = {
+		9D474E5D2E2B6F7300891BEF /* Build configuration list for PBXProject "desktop-capture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D474E872E2B6F7400891BEF /* Debug */,
@@ -523,7 +523,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D474E892E2B6F7400891BEF /* Build configuration list for PBXNativeTarget "ob-desktop-capture" */ = {
+		9D474E892E2B6F7400891BEF /* Build configuration list for PBXNativeTarget "desktop-capture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D474E8A2E2B6F7400891BEF /* Debug */,
@@ -532,7 +532,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D474E8C2E2B6F7400891BEF /* Build configuration list for PBXNativeTarget "ob-desktop-captureTests" */ = {
+		9D474E8C2E2B6F7400891BEF /* Build configuration list for PBXNativeTarget "desktop-captureTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D474E8D2E2B6F7400891BEF /* Debug */,
@@ -541,7 +541,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D474E8F2E2B6F7400891BEF /* Build configuration list for PBXNativeTarget "ob-desktop-captureUITests" */ = {
+		9D474E8F2E2B6F7400891BEF /* Build configuration list for PBXNativeTarget "desktop-captureUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D474E902E2B6F7400891BEF /* Debug */,

@@ -1,6 +1,6 @@
 //
 //  ob_desktop_captureUITests.swift
-//  ob-desktop-captureUITests
+//  desktop-captureUITests
 //
 //  Created by Airing on 2025/7/19.
 //
